@@ -1,3 +1,46 @@
+:root{
+  --navcolor: #2c3e50;
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+  --footer: #1a252f
+}
+
+.secondColor, .card-body{
+  background-color: var(--second-color);
+}
+.home{
+  background-color: var(--main-color);
+  height:80vh;
+  /* padding-top:0.1rem; */
+}
+.notfound{
+  height: 34vh;
+}
+.bodyColor{
+  background-color: var(--main-color);
+  height:80vh;
+  padding-top:8rem;
+}
+.card{
+  border: none !important;
+}
+.line{
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+.mainColor{
+  background-color: var(--navcolor);
+  color: white;
+}
+.mainColorRev{
+  color: var(--navcolor);
+  /* color: white; */
+}
+.copyright{
+  background-color: var(--footer);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +53,53 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.layer{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156,0);
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  transition: all 1000ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 1000ms;
+  -moz-transition: all 1000ms;
+  -ms-transition: all 1000ms;
+  -o-transition: all 1000ms;
+}
+
+.layer:hover {
+  background-color: rgba(26, 188, 156,0.7);
+  
+}
+.layer:hover .layericon{
+  opacity: 100;
+}
+
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: inherit;
+  /* border: #1abc9c solid 1px; */
+  padding: 8px;
+  background-color: #1abc9c;
+  border-radius: 10px ;
+}
+.layericon{
+  opacity: 0;
+  transition: all 3000ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: ;
+  */-webkit-transition: all 3000ms;
+  -moz-transition: all 3000ms;
+  -ms-transition: all 3000ms;
+  -o-transition: all 3000ms;
+  -webkit-transition: all 3000ms;
 }
